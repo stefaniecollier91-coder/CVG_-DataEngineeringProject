@@ -1,0 +1,7 @@
+flowchart LR
+    A[Flight performance data] --> C[ETL pipeline]
+    B[Weather observations] --> C
+    C --> D[(PostgreSQL)]
+    D --> E[Reporting view: vw_monthly_flight_weather_summary]
+    E --> F[Dash dashboard]
+    F --> G[Executive insights]
